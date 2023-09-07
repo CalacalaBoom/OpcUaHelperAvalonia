@@ -13,7 +13,7 @@
   </Design.DataContext>
 
   <Grid RowDefinitions="auto,*">
-    <Grid Background="#EB7600">
+    <Grid Background="#66AEE7">
       <TextBlock Text="OPC Monitor [ OPC UA Helper ] [ Avalonia ]" Foreground="White" FontFamily="Microsoft YaHei" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
       <!--Menu-->
       <Menu HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" >
@@ -36,7 +36,7 @@
           <Grid>
           <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
             <Image Source="resm:app.Core.images.glasses.png?assembly=app.Core" Height="15" Width="15" VerticalAlignment="Center"/>
-            <TextBlock Text="Server Browser:" Foreground="#EB7600" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            <TextBlock Text="Server Browser:" Foreground="#66AEE7" VerticalAlignment="Center" Margin="5,0,0,0"/>
           </StackPanel>
 
             <!--Fast Access-->

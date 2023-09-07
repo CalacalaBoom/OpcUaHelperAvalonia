@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CSharp\\Demo\\OPCUaAvalonia\\app\\app.Core\\app.Core.csproj": {}
+    "E:\\CSharp\\Demo\\OPCUaAvalonia\\OpcUaHelperAvalonia\\app\\app.Core\\app.Core.csproj": {}
   },
   "projects": {
-    "E:\\CSharp\\Demo\\OPCUaAvalonia\\app\\app.Core\\app.Core.csproj": {
+    "E:\\CSharp\\Demo\\OPCUaAvalonia\\OpcUaHelperAvalonia\\app\\app.Core\\app.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CSharp\\Demo\\OPCUaAvalonia\\app\\app.Core\\app.Core.csproj",
+        "projectUniqueName": "E:\\CSharp\\Demo\\OPCUaAvalonia\\OpcUaHelperAvalonia\\app\\app.Core\\app.Core.csproj",
         "projectName": "app.Core",
-        "projectPath": "E:\\CSharp\\Demo\\OPCUaAvalonia\\app\\app.Core\\app.Core.csproj",
+        "projectPath": "E:\\CSharp\\Demo\\OPCUaAvalonia\\OpcUaHelperAvalonia\\app\\app.Core\\app.Core.csproj",
         "packagesPath": "C:\\Users\\14063\\.nuget\\packages\\",
-        "outputPath": "E:\\CSharp\\Demo\\OPCUaAvalonia\\app\\app.Core\\obj\\",
+        "outputPath": "E:\\CSharp\\Demo\\OPCUaAvalonia\\OpcUaHelperAvalonia\\app\\app.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

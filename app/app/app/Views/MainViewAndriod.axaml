@@ -3,7 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:app.ViewModels"
-             mc:Ignorable="d"
+             mc:Ignorable="d" x:CompileBindings="False"
              x:Class="app.MainViewAndriod">
   <Design.DataContext>
     <!-- This only sets the DataContext for the previewer in an IDE,
@@ -11,17 +11,83 @@
     <vm:MainViewModel />
   </Design.DataContext>
 
-  <Grid RowDefinitions="auto,auto,*">
-    <Grid Background="#EB7600">
+  <Grid RowDefinitions="auto,auto,*,2*,auto" Background="#F0F0F0">
+    <Grid Background="#C5A781">
       <TextBlock Text="OPC Monitor [ OPC UA Helper ] [ Avalonia Android]" Foreground="White" FontFamily="Microsoft YaHei" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,5,0,5"/>
     </Grid>
 
-    <StackPanel Grid.Row="1">
-      
+    <StackPanel Grid.Row="1" Margin="5,0,5,0" >
+      <Grid ColumnDefinitions="auto,*,auto">
+        <TextBlock Text="Address:" VerticalAlignment="Center"/>
+        <TextBox Grid.Column="1" Text="{Binding Address}" Margin="5,5,0,5"/>
+        <Button Grid.Column="2" Command="{Binding ConnectAction}" Content="Connect" Margin="5,5,0,5"/>
+      </Grid>
+
+      <Grid ColumnDefinitions="auto,*">
+        <!--Fast Access-->
+        <StackPanel Orientation="Horizontal">
+          <CheckBox VerticalAlignment="Center" IsChecked="{Binding isFastAccess}"/>
+          <TextBlock Text="Fast Access" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <!--Subscript-->
+        <Button Padding="0" Grid.Column="1" HorizontalAlignment="Right">
+          <Button.Content>
+            <StackPanel Orientation="Horizontal" Margin="5">
+              <Image Source="resm:app.Core.images.refresh.png?assembly=app.Core" Height="15" Width="15"/>
+              <TextBlock Text="Subscript" Margin="5,0,0,0"/>
+            </StackPanel>
+          </Button.Content>
+        </Button>
+      </Grid>
+
+      <!--Selected NodeId-->
+      <Grid ColumnDefinitions="auto,*,auto" Margin="0,5,0,5">
+        <StackPanel Orientation="Horizontal">
+          <Image Source="resm:app.Core.images.copy.png?assembly=app.Core" Width="20" Height="20" VerticalAlignment="Center"/>
+          <TextBlock Text="Selected NodeId:" Margin="5,0,0,0"  VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <TextBox Grid.Column="1" Text="{Binding NodeAddress}" IsReadOnly="True" Margin="5,0,0,0"/>
+
+        <StackPanel Grid.Column="2" Orientation="Horizontal">
+          <Image Source="resm:app.Core.images.USB.png?assembly=app.Core" Width="20" Height="20" Margin="5,0,0,0"  VerticalAlignment="Center"/>
+          <TextBlock Text="0" Margin="5,0,0,0"  VerticalAlignment="Center"/>
+          <TextBlock Text="ms"  VerticalAlignment="Center"/>
+        </StackPanel>
+      </Grid>
+
     </StackPanel>
 
-    <ScrollViewer Grid.Row="2">
-      
-    </ScrollViewer>
+    <Border Grid.Row="2" BorderBrush="Black" Background="White" BorderThickness="1" CornerRadius="5" Margin="10">
+      <ScrollViewer>
+        <TreeView ItemsSource="{Binding Nodes}">
+          <TreeView.ItemTemplate>
+            <TreeDataTemplate ItemsSource="{Binding SubNodes}">
+              <TextBlock Text="{Binding Title}"/>
+            </TreeDataTemplate>
+          </TreeView.ItemTemplate>
+        </TreeView>
+      </ScrollViewer>
+    </Border>
+
+    <Border Grid.Row="3" BorderBrush="Black" Background="White" BorderThickness="1" CornerRadius="5" Margin="10,0">
+      <ScrollViewer>
+        <!--DataGrid-->
+        <DataGrid ItemsSource="{Binding VariableList}">
+          <DataGrid.Columns>
+            <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
+            <DataGridTextColumn Header="Value" Binding="{Binding Value}" />
+            <DataGridTextColumn Header="Type" Binding="{Binding Type}" />
+            <DataGridTextColumn Header="AccessLevel" Binding="{Binding AccessLevel}" />
+            <DataGridTextColumn Header="Description" Binding="{Binding Description}" />
+          </DataGrid.Columns>
+        </DataGrid>
+      </ScrollViewer>
+    </Border>
+
+    <Grid Grid.Row="4" Background="#E0E0E0">
+      <TextBlock Text="{Binding Tip}" FontSize="10" HorizontalAlignment="Left" Margin="10,5,0,5"/>
+    </Grid>
   </Grid>
 </UserControl>

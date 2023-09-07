@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G4JjWeX5safyfCNflLIhRlr1rXjibSrfK520WjwmhqvUamAZ7t3ZYQ6zWwSJ1aEC8TPBE8frarVWDTDNNfwYXQ==",
+  "dgSpecHash": "L3aRGKNRbYBprfYLEO/4O9TI4kWzQcAuHDKpDLLIM9IHeFarhTWcSIAEK2qsMK5N0KOMAR+gw4vL8l65M+Feww==",
   "success": true,
-  "projectFilePath": "E:\\CSharp\\Demo\\OPCUaAvalonia\\app\\app.Core\\app.Core.csproj",
+  "projectFilePath": "E:\\CSharp\\Demo\\OPCUaAvalonia\\OpcUaHelperAvalonia\\app\\app.Core\\app.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\14063\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\2.2.0\\microsoft.aspnetcore.connections.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\14063\\.nuget\\packages\\microsoft.aspnetcore.hosting\\2.2.0\\microsoft.aspnetcore.hosting.2.2.0.nupkg.sha512",
