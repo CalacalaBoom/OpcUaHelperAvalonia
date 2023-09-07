@@ -1,6 +1,7 @@
 ﻿using app.Core.Models;
 using Avalonia.Controls.Notifications;
 using ReactiveUI;
+using System;
 using System.Collections.ObjectModel;
 
 namespace app.ViewModels
@@ -27,6 +28,18 @@ namespace app.ViewModels
         {
             get => _Nodes;
             set => this.RaiseAndSetIfChanged(ref _Nodes, value);
+        }
+
+        private Node _SelectedNode = new Node();
+        public Node SelectedNode
+        {
+            get => _SelectedNode;
+            set
+            {
+                this.RaiseAndSetIfChanged(ref _SelectedNode, value);
+                SelectedChange();
+            }
+
         }
 
         private string _NodeAddress = string.Empty;
@@ -57,18 +70,6 @@ namespace app.ViewModels
             isFastAccess = true;
             NodeAddress = "test";
             Tip = "Opc Status: [正常] 2023-09-05 17:12:39 Connected [opc.tcp://172.16.36.3/]";
-
-            for (int i = 0; i < 10; i++)
-            {
-                VariableList.Add(new VariableData()
-                {
-                    Name = i.ToString(),
-                    Value = i.ToString(),
-                    Type = i.ToString(),
-                    AccessLevel = i.ToString(),
-                    Description = i.ToString()
-                });
-            }
 
             Nodes.Add(new Node()
             {
@@ -128,7 +129,7 @@ namespace app.ViewModels
         #region Command
         public void ExitAction()
         {
-            
+
         }
 
         public void DiscoverAction()
@@ -139,6 +140,16 @@ namespace app.ViewModels
         public void ConnectAction()
         {
 
+        }
+
+        public void SelectAction()
+        {
+
+        }
+
+        private void SelectedChange()
+        {
+            
         }
         #endregion
     }

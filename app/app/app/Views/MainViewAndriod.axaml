@@ -59,12 +59,16 @@
 
     </StackPanel>
 
+    <!--Nodes-->
     <Border Grid.Row="2" BorderBrush="Black" Background="White" BorderThickness="1" CornerRadius="5" Margin="10">
       <ScrollViewer>
-        <TreeView ItemsSource="{Binding Nodes}">
+        <TreeView ItemsSource="{Binding Nodes}" SelectedItem="{Binding SelectedNode}">
           <TreeView.ItemTemplate>
             <TreeDataTemplate ItemsSource="{Binding SubNodes}">
-              <TextBlock Text="{Binding Title}"/>
+              <StackPanel Orientation="Horizontal">
+                <Image Source="resm:app.Core.images.value.png?assembly=app.Core" Height="15" Width="15"/>
+                <TextBlock Text="{Binding Title}" Margin="5,0,0,0"/>
+              </StackPanel>
             </TreeDataTemplate>
           </TreeView.ItemTemplate>
         </TreeView>

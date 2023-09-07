@@ -34,24 +34,27 @@
       <Grid Grid.Row="1" ColumnDefinitions="*,3*">
         <Grid RowDefinitions="auto,*">
           <Grid>
-          <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
-            <Image Source="resm:app.Core.images.glasses.png?assembly=app.Core" Height="15" Width="15" VerticalAlignment="Center"/>
-            <TextBlock Text="Server Browser:" Foreground="#66AEE7" VerticalAlignment="Center" Margin="5,0,0,0"/>
-          </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+              <Image Source="resm:app.Core.images.glasses.png?assembly=app.Core" Height="15" Width="15" VerticalAlignment="Center"/>
+              <TextBlock Text="Server Browser:" Foreground="#66AEE7" VerticalAlignment="Center" Margin="5,0,0,0"/>
+            </StackPanel>
 
             <!--Fast Access-->
-          <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-            <CheckBox VerticalAlignment="Center" IsChecked="{Binding isFastAccess}"/>
-            <TextBlock Text="Fast Access" VerticalAlignment="Center"/>
-          </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+              <CheckBox VerticalAlignment="Center" IsChecked="{Binding isFastAccess}"/>
+              <TextBlock Text="Fast Access" VerticalAlignment="Center"/>
+            </StackPanel>
           </Grid>
 
           <!--Nodes-->
           <Border Grid.Row="1" Background="White" Margin="10,5,0,5" CornerRadius="3" BorderBrush="Black" BorderThickness="1">
-            <TreeView ItemsSource="{Binding Nodes}">
+            <TreeView ItemsSource="{Binding Nodes}" SelectedItem="{Binding SelectedNode}">
               <TreeView.ItemTemplate>
                 <TreeDataTemplate ItemsSource="{Binding SubNodes}">
-                  <TextBlock Text="{Binding Title}"/>
+                  <StackPanel Orientation="Horizontal">
+                    <Image Source="resm:app.Core.images.value.png?assembly=app.Core" Height="15" Width="15"/>
+                    <TextBlock Text="{Binding Title}" Margin="5,0,0,0"/>
+                  </StackPanel>
                 </TreeDataTemplate>
               </TreeView.ItemTemplate>
             </TreeView>
@@ -99,7 +102,7 @@
       <Grid Grid.Row="2" Background="#E0E0E0">
         <TextBlock Text="{Binding Tip}" HorizontalAlignment="Left" Margin="10,5,0,5"/>
       </Grid>
-      
+
     </Grid>
   </Grid>
 </UserControl>
