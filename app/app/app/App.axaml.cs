@@ -17,17 +17,11 @@ namespace app
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                desktop.MainWindow = new MainWindow
-                {
-                    DataContext = new MainViewModel()
-                };
+                desktop.MainWindow = new MainWindow();
             }
             else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
             {
-                singleViewPlatform.MainView = new MainViewAndriod()
-                {
-                    DataContext = new MainViewModel()
-                };
+                singleViewPlatform.MainView = new MainViewAndriod();
             }
 
             base.OnFrameworkInitializationCompleted();
