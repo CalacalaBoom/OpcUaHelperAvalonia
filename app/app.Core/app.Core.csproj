@@ -9,11 +9,11 @@
   <ItemGroup>
     <None Remove="images\copy.png" />
     <None Remove="images\glasses.png" />
-    <None Remove="images\list.png" />
-    <None Remove="images\load-b.png" />
+    <None Remove="images\Node.png" />
+    <None Remove="images\Point.png" />
     <None Remove="images\refresh.png" />
+    <None Remove="images\Root.png" />
     <None Remove="images\USB.png" />
-    <None Remove="images\value.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,24 +23,25 @@
     <EmbeddedResource Include="images\glasses.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="images\list.png">
+    <EmbeddedResource Include="images\Node.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="images\load-b.png">
+    <EmbeddedResource Include="images\Point.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="images\refresh.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="images\USB.png">
+    <EmbeddedResource Include="images\Root.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="images\value.png">
+    <EmbeddedResource Include="images\USB.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.0.2" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
     <PackageReference Include="OpcUaHelper" Version="2.1.3" />
   </ItemGroup>

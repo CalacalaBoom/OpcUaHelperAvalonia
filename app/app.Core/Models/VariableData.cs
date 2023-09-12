@@ -11,7 +11,7 @@ namespace app.Core.Models
         public string Name { get; set; }
         public string Value { get; set; }
         public string Type { get; set; }
-        public string AccessLevel { get; set; }
+        public string AccessLevelt { get; set; }
         public string Description { get; set; }
     }
 }

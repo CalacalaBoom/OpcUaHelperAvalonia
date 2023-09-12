@@ -19,11 +19,8 @@ E:\CSharp\Demo\OPCUaAvalonia\app\app.Core\bin\Debug\net7.0\images\USB.png
 E:\CSharp\Demo\OPCUaAvalonia\app\app.Core\bin\Debug\net7.0\images\value.png
 E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\images\copy.png
 E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\images\glasses.png
-E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\images\list.png
-E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\images\load-b.png
 E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\images\refresh.png
 E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\images\USB.png
-E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\images\value.png
 E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\app.Core.deps.json
 E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\app.Core.dll
 E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\app.Core.pdb
@@ -36,3 +33,7 @@ E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\obj\Debug\net7.0\a
 E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\obj\Debug\net7.0\refint\app.Core.dll
 E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\obj\Debug\net7.0\app.Core.pdb
 E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\obj\Debug\net7.0\ref\app.Core.dll
+E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\obj\Debug\net7.0\Avalonia\Resources.Inputs.cache
+E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\images\Node.png
+E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\images\Point.png
+E:\CSharp\Demo\OPCUaAvalonia\OpcUaHelperAvalonia\app\app.Core\bin\Debug\net7.0\images\Root.png

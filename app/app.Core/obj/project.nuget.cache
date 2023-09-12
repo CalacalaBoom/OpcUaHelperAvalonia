@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Kf+hsTGq22gJ5TJfuv6PkC0E8yr9jlaO1kZJxXUNei7C1KCKl0aGpA/Wb6RxZpn5A2rYZLgcKvMvATRI6Z0ruQ==",
+  "dgSpecHash": "Gc/X4K2OVR81+2onDn9UpX1pM89dgCItX0DSay+WAjLRI/2FY2sHfNpmdFsb6wCGJn5/PHeoRWqF0DBFYaOYxg==",
   "success": true,
   "projectFilePath": "E:\\CSharp\\Demo\\OPCUaAvalonia\\OpcUaHelperAvalonia\\app\\app.Core\\app.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\14063\\.nuget\\packages\\avalonia\\11.0.2\\avalonia.11.0.2.nupkg.sha512",
+    "C:\\Users\\14063\\.nuget\\packages\\avalonia.buildservices\\0.0.28\\avalonia.buildservices.0.0.28.nupkg.sha512",
+    "C:\\Users\\14063\\.nuget\\packages\\avalonia.remote.protocol\\11.0.2\\avalonia.remote.protocol.11.0.2.nupkg.sha512",
     "C:\\Users\\14063\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.1\\communitytoolkit.mvvm.8.2.1.nupkg.sha512",
+    "C:\\Users\\14063\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
     "C:\\Users\\14063\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\2.2.0\\microsoft.aspnetcore.connections.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\14063\\.nuget\\packages\\microsoft.aspnetcore.hosting\\2.2.0\\microsoft.aspnetcore.hosting.2.2.0.nupkg.sha512",
     "C:\\Users\\14063\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",

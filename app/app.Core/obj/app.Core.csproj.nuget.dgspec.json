@@ -45,6 +45,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
               "version": "[8.2.1, )"

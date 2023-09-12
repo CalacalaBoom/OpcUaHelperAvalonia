@@ -3,6 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:app.ViewModels"
+             xmlns:converter="clr-namespace:app.Converter;assembly=app"
              mc:Ignorable="d"
              x:Class="app.Views.MainView"
              x:DataType="vm:MainViewModel">
@@ -11,6 +12,9 @@
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
     <vm:MainViewModel />
   </Design.DataContext>
+  <UserControl.Resources>
+    <converter:BoolToStatusBrush x:Key="BoolToStatusBrush"/>
+  </UserControl.Resources>
 
   <Grid RowDefinitions="auto,*">
     <Grid Background="#66AEE7">
@@ -28,7 +32,7 @@
       <Grid ColumnDefinitions="auto,*,auto" Margin="10,0,10,0">
         <TextBlock Text="Address:" VerticalAlignment="Center"/>
         <TextBox Grid.Column="1" Text="{Binding Address}" Margin="5,5,0,5"/>
-        <Button Grid.Column="2"  Command="{Binding ConnectAction}" Content="Connect" Margin="5,5,0,5"/>
+        <Button Grid.Column="2" Command="{Binding ConnectAction}" Content="Connect" Background="{Binding isSucess,Converter={StaticResource BoolToStatusBrush}}" Margin="5,5,0,5"/>
       </Grid>
 
       <Grid Grid.Row="1" ColumnDefinitions="*,3*">
@@ -52,8 +56,8 @@
               <TreeView.ItemTemplate>
                 <TreeDataTemplate ItemsSource="{Binding SubNodes}">
                   <StackPanel Orientation="Horizontal">
-                    <Image Source="resm:app.Core.images.value.png?assembly=app.Core" Height="15" Width="15"/>
-                    <TextBlock Text="{Binding Title}" Margin="5,0,0,0"/>
+                    <Image Source="{Binding Image}" Height="15" Width="15"/>
+                    <TextBlock Text="{Binding Title}" Margin="5,0,0,0" FontSize="15"/>
                   </StackPanel>
                 </TreeDataTemplate>
               </TreeView.ItemTemplate>
@@ -91,7 +95,7 @@
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
                 <DataGridTextColumn Header="Value" Binding="{Binding Value}" />
                 <DataGridTextColumn Header="Type" Binding="{Binding Type}" />
-                <DataGridTextColumn Header="AccessLevel" Binding="{Binding AccessLevel}" />
+                <DataGridTextColumn Header="AccessLevelt" Binding="{Binding AccessLevelt}" />
                 <DataGridTextColumn Header="Description" Binding="{Binding Description}" />
               </DataGrid.Columns>
             </DataGrid>
